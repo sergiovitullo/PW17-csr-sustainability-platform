@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Report di Sostenibilità — Conte Tasca d'Almerita</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!--
+    Canvas di sfondo utilizzato per eventuali animazioni decorative.
+    In questo caso è pensato come base grafica per una possibile
+    animazione ispirata ai tralci di vite o a elementi naturali.
+    Non contiene contenuto testuale, ma contribuisce all'atmosfera visiva della pagina.
+  -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!--
+    Intestazione principale del sito.
+    Questa sezione contiene l'identità visiva iniziale della pagina:
+    logo ufficiale dell'azienda, titolo del documento e sottotitolo societario.
+    È il primo blocco che l'utente vede e serve a presentare
+    immediatamente il contesto istituzionale del report.
+  -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="official-logo">
+        <img src="Logo.svg" alt="Conte Tasca d'Almerita" />
+      </div>
+      <div class="header-text">
+        <h1 class="site-title">Report di <em>Sostenibilità</em></h1>
+        <span class="company-sub">Società Agricola a Responsabilità Limitata</span>
+      </div>
+    </div>
+    <div class="header-divider">
+      <span class="divider-ornament">⬥</span>
+    </div>
+  </header>
+
+  <!--
+    Sezione introduttiva.
+    Qui viene inserito un testo breve ma evocativo che sintetizza
+    il tono del report e il legame dell'azienda con il territorio siciliano.
+    Serve a introdurre il tema della sostenibilità in modo narrativo ed emozionale.
+  -->
+  <section class="intro">
+    <p class="intro-text">
+      Dal cuore della Sicilia, il nostro impegno verso un'agricoltura responsabile<br>
+      si rinnova ogni anno attraverso la trasparenza e la cura per la terra che coltiviamo.
+    </p>
+  </section>
+
+  <!--
+    Sezione di presentazione aziendale.
+    Questo blocco raccoglie le informazioni istituzionali e identitarie principali:
+    chi è l'azienda, quali sono le sue radici storiche, le tappe fondamentali,
+    le tenute che la compongono e la sua filosofia in tema di sostenibilità.
+    È una sezione descrittiva che costruisce il contesto prima di arrivare
+    ai documenti scaricabili veri e propri.
+  -->
+  <section class="company-section">
+
+    <div class="company-intro-block">
+      <span class="company-eyebrow">Chi siamo</span>
+      <h2 class="company-headline">Collina, Vulcano,<br><em>Mare, Terra.</em></h2>
+      <p class="company-lead">
+        La storia della famiglia Tasca d'Almerita in Sicilia è scritta nella terra che custodisce e tramanda da otto generazioni, con il profondo rispetto dovuto alla tradizione e lo sguardo sempre rivolto al futuro.
+      </p>
+    </div>
+
+    <!--
+      Blocco cronologico delle tappe principali.
+      Questa parte racconta, in forma di timeline, i momenti più significativi
+      della storia aziendale dal 1830 fino agli sviluppi più recenti.
+      Ogni elemento della timeline è composto da un anno e da una descrizione
+      dell'evento corrispondente, così da costruire una narrazione storica ordinata.
+    -->
+    <div class="timeline-block">
+      <span class="section-label" style="text-align:left; display:block; margin-bottom:32px;">Dal 1830 — Tappe fondamentali</span>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-year">1830</div>
+          <div class="tl-content">
+            <h4>Regaleali</h4>
+            <p>1.200 ettari nella contrada Regaleali vengono acquistati dai fratelli Lucio e Carmelo Mastrogiovanni Tasca, introducendo le più moderne tecnologie agricole nell'entroterra siciliano.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">1954</div>
+          <div class="tl-content">
+            <h4>Le Vigne di Regaleali</h4>
+            <p>Viene piantato il primo degli attuali vigneti: un appezzamento di Nero d'Avola coltivato ad alberello, radice identitaria della viticoltura siciliana.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2001</div>
+          <div class="tl-content">
+            <h4>Capofaro — Isola di Salina</h4>
+            <p>Nasce Capofaro Malvasia &amp; Resort sull'isola di Salina: avvio della ricerca di territori vocati e con forte personalità nei luoghi più esclusivi della Sicilia.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2006</div>
+          <div class="tl-content">
+            <h4>Tascante — Etna</h4>
+            <p>Nasce il progetto Tascante sulle pendici dell'Etna, valorizzando il Nerello Mascalese in un territorio vulcanico di straordinaria vocazione.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2017</div>
+          <div class="tl-content">
+            <h4>Prima certificazione VIVA/SOStain</h4>
+            <p>Tasca d'Almerita diventa la prima azienda vitivinicola italiana con certificazione di sostenibilità VIVA/SOStain, avviando un percorso rigoroso di misurazione e miglioramento continuo.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2019</div>
+          <div class="tl-content">
+            <h4>Cantina Europea dell'Anno</h4>
+            <p>Wine Enthusiast nomina Tasca d'Almerita "Cantina Europea dell'Anno" per l'impegno nella viticoltura sostenibile a livello internazionale.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2023</div>
+          <div class="tl-content">
+            <h4>Certificazione B Corp</h4>
+            <p>Tasca d'Almerita ottiene la certificazione B Corp, formalizzando l'impegno a perseguire finalità di beneficio comune — per le persone, la comunità e il pianeta — oltre al profitto.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--
+      Griglia dedicata alle tenute dell'azienda.
+      Ogni riquadro rappresenta una tenuta e ne sintetizza
+      identità, posizione geografica e specializzazione produttiva.
+      La struttura a griglia facilita una lettura rapida e visivamente ordinata,
+      mettendo in evidenza la varietà dei territori in cui opera l'azienda.
+    -->
+    <div class="tenute-block">
+      <span class="section-label" style="display:block; text-align:center; margin-bottom:36px;">Le cinque Tenute</span>
+      <div class="tenute-grid">
+        <div class="tenuta-item">
+          <div class="tenuta-icon">⬡</div>
+          <h5>Regaleali</h5>
+          <span>Sclafani Bagni · 550 ha · Cuore della Sicilia</span>
+        </div>
+        <div class="tenuta-item">
+          <div class="tenuta-icon">△</div>
+          <h5>Tascante</h5>
+          <span>Etna · Nerello Mascalese · Vulcano</span>
+        </div>
+        <div class="tenuta-item">
+          <div class="tenuta-icon">◯</div>
+          <h5>Capofaro</h5>
+          <span>Salina · Malvasia · Isole Eolie</span>
+        </div>
+        <div class="tenuta-item">
+          <div class="tenuta-icon">◇</div>
+          <h5>Sallier de La Tour</h5>
+          <span>Monreale · Doc Monreale · Syrah</span>
+        </div>
+        <div class="tenuta-item">
+          <div class="tenuta-icon">□</div>
+          <h5>Whitaker</h5>
+          <span>Mozia · Isola storica · Grillo</span>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      Sezione dedicata alla filosofia di sostenibilità.
+      Qui viene espresso il principio guida dell'azienda:
+      la sostenibilità come processo di miglioramento continuo
+      e non come risultato statico.
+      Oltre alla citazione centrale, il testo spiega i programmi
+      e gli strumenti utilizzati per monitorare e valutare l'impatto ambientale.
+    -->
+    <div class="sustain-philosophy">
+      <div class="philosophy-quote">
+        <span class="quote-mark">"</span>
+        <blockquote>
+          La sostenibilità non è un punto di arrivo,<br>ma un miglioramento costante.
+        </blockquote>
+      </div>
+      <p class="philosophy-body">
+        Tasca d'Almerita misura, valuta e prevede l'influenza delle proprie azioni sul Pianeta attraverso i programmi SOStain e VIVA, promossi dal Ministero dell'Ambiente e dalla Fondazione SOStain Sicilia. L'obiettivo è acquisire piena consapevolezza dell'effetto di ogni azione compiuta in vigna, in cantina e nell'intera organizzazione — per lasciare alle generazioni future un ambiente migliore.
+      </p>
+      <div class="certifications-row">
+        <div class="cert-badge">
+          <div class="cert-icon">✦</div>
+          <span>B Corp Certified</span>
+          <small>2023</small>
+        </div>
+        <div class="cert-badge">
+          <div class="cert-icon">✦</div>
+          <span>SOStain / VIVA</span>
+          <small>Prima azienda — 2017</small>
+        </div>
+        <div class="cert-badge">
+          <div class="cert-icon">✦</div>
+          <span>Robert Parker<br>Green Emblem</span>
+          <small>2021</small>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      Separatore visivo di sezione.
+      Non aggiunge contenuto informativo, ma aiuta a scandire meglio
+      il passaggio tra la parte narrativa/istituzionale e la parte operativa,
+      cioè l'area in cui l'utente può consultare i documenti disponibili.
+    -->
+    <div class="section-divider">
+      <span class="divider-ornament">⬥</span>
+    </div>
+
+  </section>
+
+  <!--
+    Sezione principale contenente i documenti disponibili.
+    Qui vengono mostrate le schede dei report scaricabili.
+    Ogni card rappresenta un documento PDF associato a un anno specifico
+    e contiene titolo, breve descrizione, stato del documento
+    e pulsante per il download.
+  -->
+  <main class="reports-section">
+    <h2 class="section-label">Documenti disponibili</h2>
+
+    <div class="reports-grid" id="reports-grid">
+
+      <!--
+        Card del report 2024.
+        Questa scheda rappresenta il documento più recente disponibile.
+        Gli attributi data-year e data-file possono essere utilizzati da JavaScript
+        per identificare rapidamente l'anno del report e il file PDF da scaricare.
+      -->
+      <article class="report-card" data-year="2024" data-file="repository/sustainability-report-2024.pdf">
+        <div class="card-year-bg">2024</div>
+        <div class="card-inner">
+          <div class="card-icon">
+            <svg viewBox="0 0 40 48" fill="none">
+              <rect x="2" y="2" width="36" height="44" rx="3" stroke="currentColor" stroke-width="1.2"/>
+              <line x1="9" y1="14" x2="31" y2="14" stroke="currentColor" stroke-width="1"/>
+              <line x1="9" y1="20" x2="31" y2="20" stroke="currentColor" stroke-width="1"/>
+              <line x1="9" y1="26" x2="24" y2="26" stroke="currentColor" stroke-width="1"/>
+              <circle cx="29" cy="37" r="7" fill="var(--gold)" opacity="0.15"/>
+              <polyline points="26,37 29,40 33,34" stroke="var(--gold)" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="card-meta">
+            <span class="card-tag">Ultimo rilascio</span>
+            <h3 class="card-title">Report di Sostenibilità</h3>
+            <span class="card-year-label">Anno <strong>2024</strong></span>
+          </div>
+          <p class="card-desc">
+            Analisi delle performance ambientali, sociali e di governance per l'esercizio 2024. Include obiettivi raggiunti, consumi idrici, emissioni e iniziative sul territorio.
+          </p>
+          <div class="card-actions">
+            <button class="btn-download" data-year="2024">
+              <span class="btn-icon">↓</span>
+              <span class="btn-text">Scarica PDF</span>
+            </button>
+            <span class="file-info">PDF</span>
+          </div>
+        </div>
+        <div class="card-accent"></div>
+      </article>
+
+      <!--
+        Card del report 2023.
+        Questa scheda rappresenta un documento d'archivio.
+        La struttura è analoga a quella del report 2024, ma con etichetta diversa
+        per segnalare che si tratta di un contenuto precedente e non dell'ultima edizione.
+      -->
+      <article class="report-card" data-year="2023" data-file="repository/sustainability-report-2023.pdf">
+        <div class="card-year-bg">2023</div>
+        <div class="card-inner">
+          <div class="card-icon">
+            <svg viewBox="0 0 40 48" fill="none">
+              <rect x="2" y="2" width="36" height="44" rx="3" stroke="currentColor" stroke-width="1.2"/>
+              <line x1="9" y1="14" x2="31" y2="14" stroke="currentColor" stroke-width="1"/>
+              <line x1="9" y1="20" x2="31" y2="20" stroke="currentColor" stroke-width="1"/>
+              <line x1="9" y1="26" x2="24" y2="26" stroke="currentColor" stroke-width="1"/>
+              <circle cx="29" cy="37" r="7" fill="var(--wine)" opacity="0.12"/>
+              <polyline points="26,37 29,40 33,34" stroke="var(--wine)" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="card-meta">
+            <span class="card-tag archive">Archivio</span>
+            <h3 class="card-title">Report di Sostenibilità</h3>
+            <span class="card-year-label">Anno <strong>2023</strong></span>
+          </div>
+          <p class="card-desc">
+            Rendicontazione dell'impegno ESG per l'anno 2023. Bilancio delle attività di viticoltura sostenibile, biodiversità, gestione idrica e coinvolgimento della comunità locale.
+          </p>
+          <div class="card-actions">
+            <button class="btn-download" data-year="2023">
+              <span class="btn-icon">↓</span>
+              <span class="btn-text">Scarica PDF</span>
+            </button>
+            <span class="file-info">PDF</span>
+          </div>
+        </div>
+        <div class="card-accent accent-wine"></div>
+      </article>
+
+    </div>
+  </main>
+
+  <!--
+    Contenitore per notifiche temporanee (toast).
+    Questo elemento è pensato per mostrare messaggi brevi all'utente,
+    ad esempio la conferma dell'avvio di un download oppure un avviso.
+    In genere viene gestito dinamicamente tramite JavaScript,
+    che aggiorna il testo interno e ne controlla la visibilità.
+  -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span class="toast-msg" id="toast-msg"></span>
+  </div>
+
+  <!--
+    Piè di pagina del sito.
+    Contiene il nome dell'azienda, la ragione sociale,
+    le note legali e una breve indicazione sull'uso dei documenti.
+    Serve a chiudere la pagina con informazioni istituzionali e contestuali.
+  -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Conte Tasca d'Almerita</div>
+      <p class="footer-legal">Società Agricola a Responsabilità Limitata — Tutti i diritti riservati</p>
+      <p class="footer-note">I documenti contenuti in questa sezione sono riservati ai fini di consultazione e rendicontazione.</p>
+    </div>
+  </footer>
+
+  <!--
+    Collegamento al file JavaScript esterno.
+    Qui viene caricato lo script che gestisce la parte dinamica della pagina,
+    come eventuali animazioni sul canvas, comportamento dei pulsanti di download
+    e visualizzazione delle notifiche toast.
+  -->
+  <script src="script.js"></script>
+</body>
+</html>
