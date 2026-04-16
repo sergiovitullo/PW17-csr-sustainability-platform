@@ -955,3 +955,136 @@ header, section, main, footer { position: relative; z-index: 1; }
   .reports-grid { gap: 20px; }
   .intro { padding: 36px 20px 28px; }
 }
+
+/* ───────────────────────────────────────
+   ESG KEY FACTS
+   Sezione editoriale con tre card dedicate
+   a Ambiente, Sociale e Governance.
+   Mantiene il linguaggio visivo della pagina:
+   bordi sottili, serif per i titoli, palette calda.
+   ─────────────────────────────────────── */
+.esg-highlights-block {
+  padding: 0 0 56px;
+  animation: fadeUp 1s 0.8s var(--ease-silk) both;
+}
+
+.esg-intro {
+  max-width: 700px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.esg-intro p {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--mid);
+  line-height: 1.8;
+}
+
+.esg-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.esg-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 28px 24px 24px;
+  transition: transform 0.35s var(--ease-spring), box-shadow 0.35s;
+}
+
+.esg-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(26,20,16,0.08);
+}
+
+.esg-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.esg-letter {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(184,154,90,0.35);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.esg-card-head h3 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--dark);
+  margin: 0;
+}
+
+.esg-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.esg-list li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.esg-list li:last-child {
+  margin-bottom: 0;
+}
+
+.esg-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.7;
+}
+
+.esg-list strong {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .esg-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.esg-closing {
+  max-width: 720px;
+  margin: 32px auto 0;
+  text-align: center;
+}
+
+.esg-closing p {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--mid);
+  line-height: 1.7;
+}
